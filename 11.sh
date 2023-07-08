@@ -16,7 +16,7 @@ hra=$(($v * 10 / 100))
 gs=$(($v + da + hra))
 echo $line 
 echo "Employee: $emp"
-echo "Basic Salary: $salary"
+echo "Basic Salary : $v"
 echo "DA: $da"
 echo "HRA: $hra"
 echo "Gross Salary: $gs"
@@ -26,7 +26,7 @@ done < emp.lst
 # 61000
 # emp1 1/1/2003 1 manager 61000
 # Employee: emp1
-# Basic Salary:
+# Basic Salary : 61000
 # DA: 15250
 # HRA: 6100
 # Gross Salary: 82350
@@ -34,7 +34,7 @@ done < emp.lst
 # 72000
 # emp2 1/2/2003 2 manager 72000
 # Employee: emp2
-# Basic Salary:
+# Basic Salary : 72000
 # DA: 18000
 # HRA: 7200
 # Gross Salary: 97200
@@ -42,7 +42,7 @@ done < emp.lst
 # 34000
 # emp3 1/3/2003 3 manager 34000
 # Employee: emp3
-# Basic Salary:
+# Basic Salary : 34000
 # DA: 10200
 # HRA: 3400
 # Gross Salary: 47600
@@ -50,7 +50,7 @@ done < emp.lst
 # 20000
 # emp4 1/4/2003 4 employee 20000
 # Employee: emp4
-# Basic Salary:
+# Basic Salary : 20000
 # DA: 6000
 # HRA: 2000
 # Gross Salary: 28000
