@@ -16,4 +16,4 @@ fi
 # Output:-
 # Enter the name to be searched
 # abc
-# User exists
+# Not exists
