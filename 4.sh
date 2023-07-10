@@ -11,3 +11,7 @@ cut -d ' ' -f 1,2 temporary>emp1
 cat emp1
 fi
 done<temp
+
+# Output:-
+# emp1 1/1/2003
+# emp2 1/2/2003
