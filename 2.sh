@@ -22,4 +22,5 @@ cd $1
 done
 
 # Output: -
+# ./2.sh bar1 bar2
 # f1.txt
