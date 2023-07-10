@@ -20,3 +20,6 @@ fi
 cd ..
 cd $1
 done
+
+# Output: -
+# f1.txt
