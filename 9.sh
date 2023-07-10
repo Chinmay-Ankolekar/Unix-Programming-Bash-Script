@@ -17,3 +17,10 @@ fi
 echo $1 $2 >> desig.lst
 echo Data added successfully
 cat desig.lst
+
+# Output:-
+# $ ./9.sh 0101 desig
+# Valid code
+# Valid designation
+# Data added successfully
+# 0101 desig
