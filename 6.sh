@@ -12,3 +12,8 @@ echo User exists
 else
 echo Not exists
 fi
+
+# Output:-
+# Enter the name to be searched
+# abc
+# User exists
