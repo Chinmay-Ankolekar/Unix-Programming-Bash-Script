@@ -19,9 +19,9 @@ do
         echo "$line"
         echo "Employee: $emp"
         echo "Basic Salary: $v"
+        echo "DA: $da"
+        echo "HRA: $hra"
         echo "Gross Salary: $gs"
-    else
-        echo "Invalid value for Basic Salary: $v"
     fi
 done < empn.lst
 
