@@ -20,7 +20,7 @@ echo "Basic Salary : $v"
 echo "DA: $da"
 echo "HRA: $hra"
 echo "Gross Salary: $gs"
-done < emp.lst
+done < empn.lst
 
 # output:-
 # 61000
