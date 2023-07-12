@@ -2,13 +2,15 @@
 
 while read line
 do
-    echo "$line" > tempo
+    echo $line > tempo
     v=$(cut -d ' ' -f 5 tempo)
     emp=$(cut -d ' ' -f 1 tempo)
-    echo "$v"
+    echo $v
 
-    if echo "$v" | grep -qE '^[0-9]+$'; then
-        if [ "$v" -gt 60000 ]; then
+    if echo $v | grep -qE '^[0-9]+$'
+    then
+        if [ $v -gt 60000 ]
+        then
             da=$((v * 25 / 100))
         else
             da=$((v * 30 / 100))
