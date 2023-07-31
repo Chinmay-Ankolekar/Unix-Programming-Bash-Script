@@ -1,14 +1,18 @@
-#! /bin/sh
+#!/bin/sh
 
-echo "enter the directory path"
+echo "Enter the directory path"
 read path
-echo "enter to pattern to be searched"
-read pat
+
+echo "Enter the pattern to be searched"
+read pattern
+
 cd $path
+
 ls > just.txt
+
 for word in `cat just.txt`
 do
-grep "$pat" $word
+        grep $pattern $word
 done
 
 # Output:-
