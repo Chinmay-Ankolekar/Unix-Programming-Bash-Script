@@ -1,18 +1,21 @@
-#! /bin/sh
+#!/bin/sh
 
-echo set y as 1
+echo "Set y as 1"
 read y
+
 while [ $y -eq 1 ]
 do
-echo "enter the item:"
-read item
-echo "enter the itemcode:"
-read itemcode
-echo $item $itemcode >> item.txt
-echo "enter 1 if you want to enter item or 0 if you 
-dont want"
-read y
-done
+        echo "Enter the Item code"
+        read itemcode
+
+        echo "Enter the Item"
+        read item
+
+        echo $itemcode $item >> item.txt
+
+        echo "Enter 1 if you want to enter any item ,else Enter 0"
+        read y
+done 
 cat item.txt
 
 # Output:-
