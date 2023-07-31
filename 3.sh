@@ -2,23 +2,23 @@
 
 for file in *
 do
-    if [ -f $file ]
+    if [ -f "$file" ]
     then
         permission=$(stat -c '%A' "$file")
         
-        link_existence="No"
-        if [ -h $file ]
+        link_exists="No"
+        link_count=$(stat -c '%h' "$file")
+
+        if [ $link_count -gt 0 ]
         then
-            link_existence="Yes"
+            link_exists="Yes"
         fi
+
         size=$(stat -c '%s' "$file")
 
-        Link_count=$(stat -c '%h' "$file")
-
-        echo "file: $file, permission: $permission, Link existence: $link_existence, size: $size bytes, link count: $Link_count"
+        echo "File Name: $file, Permission: $permission, Link existence: $link_exists, Size: $size bytes, Link count: $link_count"
     fi
 done
 
-
-# Output:-
-# file: 3.sh, permission: -rwxr-xr-x, Link existence: No, size: 442 bytes, link count: 1
+# Output :-
+# File Name: 3.sh, Permission: -rwxr-xr-x, Link existence: Yes, Size: 449 bytes, Link count: 1
