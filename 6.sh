@@ -1,16 +1,20 @@
-#! /bin/sh
+#!/bin/sh
 
-echo Enter the name to be searched
+echo "Enter the User login account name "
 read l
-cd $HOME
+
+cd $HOME 
 ls > list1.txt
+
 cut -d ' ' -f 1 list1.txt > loginname
+
 grep $l loginname
+
 if [ $? -eq 0 ]
 then
-echo User exists
-else
-echo Not exists
+        echo "User Exists"
+else 
+        echo "User Not Exists"
 fi
 
 # Output:-
