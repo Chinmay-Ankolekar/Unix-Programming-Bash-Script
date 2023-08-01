@@ -20,4 +20,4 @@ fi
 # Output:-
 # Enter the User login account name
 # abc
-#  User Not exists
+# User Not exists
