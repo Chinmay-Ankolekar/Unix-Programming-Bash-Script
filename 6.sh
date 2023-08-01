@@ -8,7 +8,7 @@ ls > list1.txt
 
 cut -d ' ' -f 1 list1.txt > loginname
 
-grep $l loginname
+grep "$l" loginname
 
 if [ $? -eq 0 ]
 then
