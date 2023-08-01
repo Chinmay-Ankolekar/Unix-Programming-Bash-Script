@@ -6,9 +6,7 @@ read l
 cd $HOME 
 ls > list1.txt
 
-cut -d ' ' -f 1 list1.txt > loginname
-
-grep "$l" loginname
+grep "$l" list1.txt
 
 if [ $? -eq 0 ]
 then
