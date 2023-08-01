@@ -18,7 +18,7 @@ do
 done
 
 # Output:-
-# 1.who 2.whoami 3.date 4.ls -l 5.exit
+# 1.Who 2.Whoami 3.Date 4.ls -l 5.exit
 # Enter choice
 # 2
 # hp
