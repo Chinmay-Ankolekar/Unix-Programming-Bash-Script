@@ -1,39 +1,35 @@
 #!/bin/sh
 
-echo "Set y as 1"
-read y
+y=1
 
 while [ $y -eq 1 ]
 do
-        echo "Enter the Item code"
-        read itemcode
+         echo "Enter the Item Code"
+         read itemcode
 
-        echo "Enter the Item"
-        read item
+         echo "Enter the Item"
+         read item
 
-        echo $itemcode $item >> item.txt
+         echo $itemcode $item >> item.txt
 
-        echo "Enter 1 if you want to add item ,else Enter 0"
-        read y
-done 
+         echo "Enter 1 to continue or 0 to discontinue"
+         read y
+done
+
 cat item.txt
 
 # Output:-
-# set y as 1
-# 1
-# enter the item:
+# Enter the Item Code
+# 0101
+# Enter the Item
 # Item1
-# enter the itemcode:
-# 01
-# enter 1 if you want to enter item or 0 if you 
-# dont want
+# Enter 1 to continue or 0 to discontinue
 # 1
-# enter the item:
-# Item2
-# enter the itemcode:
-# 02
-# enter 1 if you want to enter item or 0 if you 
-# dont want
+# Enter the Item Code
+# 0102
+# Enter the Item
+# Item 2
+# Enter 1 to continue or 0 to discontinue
 # 0
-# Item1 01
-# Item2 02
+# 0101 Item1
+# 0102 Item 2
