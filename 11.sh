@@ -7,7 +7,7 @@ do
     emp=$(cut -d ' ' -f 1 tempo)
     echo $v
 
-    if echo $v | grep -qE '^[0-9]+$'
+    if echo $v | egrep -q '^[0-9]+$'
     then
         if [ $v -gt 60000 ]
         then
