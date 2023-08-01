@@ -19,12 +19,15 @@ done
 
 # Output:-
 # 1.Who 2.Whoami 3.Date 4.ls -l 5.exit
+
 # Enter choice
 # 2
 # hp
+
 # Enter choice
 # 3
 # Mon, Jul 10, 2023 11:29:19 PM
+
 # Enter choice
 # 4
 # total 26
@@ -40,5 +43,6 @@ done
 # -rwxr-xr-x 1 hp 197121  253 Jul  8 19:06 8.sh
 # -rwxr-xr-x 1 hp 197121  322 Jul  8 22:17 9.sh
 # drwxr-xr-x 1 hp 197121    0 Jul 10 23:14 bash_reference_file
+
 # Enter the choice
 # 5
