@@ -1,45 +1,54 @@
-#! /bin/sh
+#!/bin/sh
 
 if [ $# -ne 2 ]
 then
- echo Argument count doesnot match
- exit
+        echo "Arguement count doesnot match"
+        exit
 fi
+
 if [ ! -f $1 ]
 then
- echo $1 does not exist
- exit
+        echo "File $1 doesnot exists"
+        exit
 fi
+
 if [ ! -f $2 ]
 then
- echo $2 does not exist
- exit
+        echo "File $2 doesnot exists"
+        exit 
 fi
-echo "Comparision Between file1 and file2"
+
+echo "\nCompare Command"
 cmp $1 $2
 if [ $? -eq 0 ]
 then
- echo Compare command executed successfully
+        echo "Compare Command Executed successfully"
 fi
-echo Common between the files is
+
+echo "\nCommon Command"
 comm $1 $2
 if [ $? -eq 0 ]
 then
- echo Common command executed successfully
+        echo "Common command executed successfully"
 fi
-echo Difference between files is
+
+echo "\nDifference Command"
 diff $1 $2
 if [ $? -eq 0 ]
 then
- echo Difference command executed successfully
+        echo "Difference Command executed"
 fi
-echo The five largest files among the current directory are
+
+echo "\nFive largest files in current directory are "
 ls -l | sort -n -k 5 | tail -5
 
+
 # Output :-
-# Comparision Between file1 and file2
+# Compare Command
 # fruit.txt fruit1.txt differ: byte 16, line 3
-# Common between the files is
+# Compare Command Executed successfully
+
+# Common Command
 #                 Apple
 #                 Banana
 # Cherries
@@ -48,12 +57,15 @@ ls -l | sort -n -k 5 | tail -5
 #         Grapes
 #                 Guava
 # Common command executed successfully
-# Difference between files is
+
+# Difference Command
 # 3d2
 # < Cherries
 # 5a5
 # > Grapes
-# The five largest files among the current directory are
+# Difference Command executed
+
+# Five largest files in current directory are
 # -rwxr-xr-x 1 hp 197121 241 Jul  8 19:27 5.sh
 # -rwxr-xr-x 1 hp 197121 253 Jul  8 19:06 8.sh
 # -rwxr-xr-x 1 hp 197121 322 Jul  8 22:17 9.sh
