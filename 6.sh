@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo "Enter the User login account name "
+echo "Enter the User login account name"
 read l
 
 cd $HOME 
@@ -18,6 +18,6 @@ else
 fi
 
 # Output:-
-# Enter the name to be searched
+# Enter the User login account name
 # abc
-# Not exists
+#  User Not exists
