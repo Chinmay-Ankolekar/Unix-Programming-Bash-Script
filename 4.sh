@@ -14,5 +14,5 @@ do
 done < temp
 
 # Output:-
-# emp1 1/1/2003
 # emp2 1/2/2003
+# emp3 1/3/2003
