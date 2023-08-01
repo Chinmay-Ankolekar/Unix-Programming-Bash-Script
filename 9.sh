@@ -21,8 +21,8 @@ echo "Data added successfully"
 cat desig.lst
 
 # Output:-
-# $ ./9.sh 0101 desig
-# Valid code
-# Valid designation
+# $ ./9.sh 0101 Desig
+# Valid Designation code
+# Valid designation description
 # Data added successfully
-# 0101 desig
+# 0101 Desig
