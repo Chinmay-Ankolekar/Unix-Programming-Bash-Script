@@ -40,6 +40,5 @@ done
 # -rwxr-xr-x 1 hp 197121  253 Jul  8 19:06 8.sh
 # -rwxr-xr-x 1 hp 197121  322 Jul  8 22:17 9.sh
 # drwxr-xr-x 1 hp 197121    0 Jul 10 23:14 bash_reference_file
-
 # Enter the choice
 # 5
