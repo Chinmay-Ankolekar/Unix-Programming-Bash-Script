@@ -4,7 +4,7 @@ echo "1.Who 2.Whoami 3.Date 4.ls -l 5.exit"
 
 while [ true ]
 do
-        echo "Enter Choice"
+        echo "\nEnter Choice"
         read choice
 
         case $choice in 
