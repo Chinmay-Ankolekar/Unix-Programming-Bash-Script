@@ -13,7 +13,7 @@ do
 
         echo $itemcode $item >> item.txt
 
-        echo "Enter 1 if you want to enter any item ,else Enter 0"
+        echo "Enter 1 if you want to add item ,else Enter 0"
         read y
 done 
 cat item.txt
