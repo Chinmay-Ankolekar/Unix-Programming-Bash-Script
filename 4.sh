@@ -7,9 +7,9 @@ do
         echo $line > temporary
         v=$(cut -d ' ' -f 5 temporary)
 
-        if [ $v -gt 60000 ]
+        if [ $v -gt 6000 ]
         then
-                echo $(cut -d ' ' -f 1,2 temporary)
+                cut -d ' ' -f 1,2 temporary
         fi
 done < temp
 
