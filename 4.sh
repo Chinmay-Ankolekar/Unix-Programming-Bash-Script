@@ -1,6 +1,6 @@
 #!/bin/sh
 
-grep "manager" "emp.lst" > temp
+grep "manager" emp.lst > temp
 
 while read line 
 do
