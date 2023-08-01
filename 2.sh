@@ -13,7 +13,7 @@ for word in `cat list1.txt`
 do
         cd ..
         cd $2
-        grep $word "list2.txt"
+        grep "$word" list2.txt
 
         if [ $? -eq 0 ]
         then
