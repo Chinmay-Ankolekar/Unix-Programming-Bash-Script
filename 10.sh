@@ -12,13 +12,13 @@ ls > just.txt
 
 for word in `cat just.txt`
 do
-        grep $pattern $word
+        grep "$pattern" $word
 done
 
 # Output:-
-# enter the directory path
+# Enter the directory path
 # /home/linux/unix
-# enter to pattern to be searched
+# Enter to pattern to be searched
 # sh
 # #! /bin/sh
 # #! /bin/sh
