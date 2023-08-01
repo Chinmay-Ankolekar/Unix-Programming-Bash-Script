@@ -23,7 +23,7 @@ do
         echo "Basic Salary: $v"
         echo "DA: $da"
         echo "HRA: $hra"
-        echo "Gross Salary: $gs"
+        echo "Gross Salary: $gs\n"
     fi
 done < empn.lst
 
