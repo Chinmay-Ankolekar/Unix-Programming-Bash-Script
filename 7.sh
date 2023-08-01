@@ -1,29 +1,31 @@
 #!/bin/sh
 
-echo 1.who 2.whoami 3.date 4.ls -l 5.exit
+echo "1.Who 2.Whoami 3.Date 4.ls -l 5.exit"
+
 while [ true ]
 do
-echo Enter the choice
-read choice
-case $choice in
- 1)who;;
- 2)whoami;;
- 3)date;;
- 4)ls -l;;
- 5)exit;;
- *)echo Invalid entry
-esac
+        echo "Enter Choice"
+        read choice
+
+        case $choice in 
+                1)who;;
+                2)whoami;;
+                3)date;;
+                4)ls -l;;
+                5)exit;;
+                *)echo "Invalid choice"
+        esac
 done
 
 # Output:-
 # 1.who 2.whoami 3.date 4.ls -l 5.exit
-# Enter the choice
+# Enter choice
 # 2
 # hp
-# Enter the choice
+# Enter choice
 # 3
 # Mon, Jul 10, 2023 11:29:19 PM
-# Enter the choice
+# Enter choice
 # 4
 # total 26
 # -rwxr-xr-x 1 hp 197121  620 Jul  8 19:06 1.sh
